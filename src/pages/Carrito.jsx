@@ -4,7 +4,7 @@ import { PayPalButtons } from "@paypal/react-paypal-js";
 import { getCarrito, eliminarDelCarrito, actualizarCantidad, crearPedido } from "../services/api";
 import axios from "axios";
 
-const API_PEDIDOS = "http://localhost:3003";
+const API_PEDIDOS = "https://api-pedidos.hexamx.com.mx";
 
 export default function Carrito() {
   const [items, setItems] = useState([]);

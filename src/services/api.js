@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-const API_PRODUCTOS = 'http://localhost:3001';
-const API_USUARIOS = 'http://localhost:3002';
-const API_PEDIDOS = 'http://localhost:3003';
+const API_PRODUCTOS = 'https://api-productos.hexamx.com.mx';
+const API_USUARIOS = 'https://api-usuarios.hexamx.com.mx';
+const API_PEDIDOS = 'https://api-pedidos.hexamx.com.mx';
 
 const getHeaders = () => ({
   headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
