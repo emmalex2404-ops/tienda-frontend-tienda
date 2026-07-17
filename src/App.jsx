@@ -4,6 +4,7 @@ import Catalogo from "./pages/Catalogo";
 import Carrito from "./pages/Carrito";
 import MisPedidos from "./pages/MisPedidos";
 import Login from "./pages/Login";
+import Registro from "./pages/Registro";
 
 const paypalOptions = {
   clientId: "AcZhvhzWTzdT7mI_e9ybVLzCehF0_HWvFoORuh4stEgSQEwyBGqRWe9m3WpEALRA0MsEuhLW3SeVuTBS",
@@ -19,6 +20,7 @@ function App() {
           <Route path="/carrito" element={<Carrito />} />
           <Route path="/mis-pedidos" element={<MisPedidos />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/registro" element={<Registro />} />
         </Routes>
       </BrowserRouter>
     </PayPalScriptProvider>
