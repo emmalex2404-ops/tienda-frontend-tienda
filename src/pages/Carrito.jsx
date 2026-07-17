@@ -128,7 +128,7 @@ export default function Carrito() {
                 {items.map(item => (
                   <div key={item.id} className="bg-white rounded-lg shadow p-4 mb-4 flex justify-between items-center">
                     <div>
-                      <p className="font-semibold">Producto #{item.product_id}</p>
+                      <p className="font-semibold">{item.nombre_producto || `Producto #${item.product_id}`}</p>
                       <p className="text-gray-500 text-sm">Cantidad: {item.cantidad}</p>
                     </div>
                     <div className="flex items-center gap-3">
@@ -162,7 +162,7 @@ export default function Carrito() {
               <h3 className="font-semibold text-lg mb-4">Resumen</h3>
               {items.map(item => (
                 <div key={item.id} className="flex justify-between py-2 border-b">
-                  <span>Producto #{item.product_id} x{item.cantidad}</span>
+                  <span>{item.nombre_producto || `Producto #${item.product_id}`} x{item.cantidad}</span>
                 </div>
               ))}
               <p className="text-xl font-bold mt-4">Total: <span className="text-green-600">${total.toFixed(2)}</span></p>
